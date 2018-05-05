@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppThemeNoBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="AppTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/enoxs_title</item>
+        <item name="android:textSize">20pt</item>
+    </style>
+    <style name="AppContentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15pt</item>
+    </style>
+    <style name="AppTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:padding">3pt</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12pt</item>
+    </style>
+    <style name="AppButtonStyle">
+        <item name="android:layout_width">150pt</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12pt</item>
+        <item name="android:layout_margin">1pt</item>
+        <item name="android:padding">3pt</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/btn_white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+</resources>

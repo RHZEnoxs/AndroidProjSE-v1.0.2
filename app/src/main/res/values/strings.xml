@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SE-v1.0.2</string>
+
+    <string name="HomeTitle">AndroidProjSE-v1.0.2</string>
+    <string name="HomeContent">Hello Developer</string>
+    <string name="HomeButtonItem1">1. App Message</string>
+    <string name="HomeButtonItem2">2. FlowPath Sample</string>
+    <string name="HomeButtonItem3">3. Crash !?</string>
+
+    <string name="MessageButtonBack"> Back </string>
+</resources>

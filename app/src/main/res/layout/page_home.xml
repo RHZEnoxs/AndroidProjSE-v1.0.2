@@ -1,0 +1,48 @@
+<com.enoxs.se.page.home.HomePage xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enoxs_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/AppTitleStyle"
+            android:text="@string/HomeTitle" />
+
+        <TextView
+            android:id="@+id/txt_content"
+            style="@style/AppContentStyle"
+            android:text="@string/HomeContent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_message"
+            style="@style/AppButtonStyle"
+            android:text="@string/HomeButtonItem1" />
+
+        <Button
+            android:id="@+id/btn_sample"
+            style="@style/AppButtonStyle"
+            android:text="@string/HomeButtonItem2" />
+
+        <Button
+            android:id="@+id/btn_crash"
+            style="@style/AppButtonStyle"
+            android:text="@string/HomeButtonItem3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</com.enoxs.se.page.home.HomePage>

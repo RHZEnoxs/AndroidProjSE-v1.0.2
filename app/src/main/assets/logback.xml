@@ -1,0 +1,30 @@
+<configuration debug='false'>
+    <property name="FILES_DIR" value="${EXT_DIR:-/sdcard}/SE/Log" />
+
+    <appender name="ENOXS_STDOUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${FILES_DIR}/msg.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d %-5level \(%c{0}:%M:%L\) - %m %n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>vip.log.%i</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>100</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>5MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %-5level \(%c{0}:%M:%L\) - %m %n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="ENOXS_STDOUT" />
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
